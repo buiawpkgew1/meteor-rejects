@@ -35,7 +35,7 @@ jobs:
       with:
           repo_token: "${{ secrets.GITHUB_TOKEN }}"
           automatic_release_tag: "latest-1.19.1"
-          prerelease: false
+          prerelease: true
           title: "1.19.1 Build"
           files: |
             ./build/libs/*.jar
