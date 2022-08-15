@@ -50,7 +50,7 @@ public class HeadScreen extends WindowScreen {
     private final Setting<Categories> categorySetting = sgGeneral.add(new EnumSetting.Builder<Categories>()
         .name("Category")
         .defaultValue(category)
-        .description("Category")
+        .description("类别")
         .onChanged((v) -> this.loadHeads())
         .build()
     );

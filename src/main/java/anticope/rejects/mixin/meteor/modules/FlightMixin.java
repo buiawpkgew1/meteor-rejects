@@ -27,8 +27,8 @@ public class FlightMixin {
     @Inject(method = "<init>", at=@At("TAIL"), remap = false)
     private void onInit(CallbackInfo ci) {
         stopMomentum = sgGeneral.add(new BoolSetting.Builder()
-            .name("stop-momentum")
-            .description("Stops momentum on flight disable")
+            .name("停止动量")
+            .description("在飞行过程中停止动能的中断")
             .defaultValue(false)
             .build()
         );

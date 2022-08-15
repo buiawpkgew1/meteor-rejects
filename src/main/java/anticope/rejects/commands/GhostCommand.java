@@ -15,7 +15,7 @@ import com.mojang.brigadier.arguments.IntegerArgumentType;
 
 public class GhostCommand extends Command {
     public GhostCommand() {
-        super("ghost", "Remove ghost blocks & bypass AntiXray", "aax", "anti-anti-xray");
+        super("ghost", "移除幽灵块并绕过AntiXray", "aax", "anti-anti-xray");
     }
 
     @Override

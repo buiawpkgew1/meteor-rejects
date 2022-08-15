@@ -20,7 +20,7 @@ import java.util.*;
 public class GiveCommand extends Command {
 
     public GiveCommand() {
-        super("give", "Gives items in creative", "item", "kit");
+        super("give", "给予创造性的物品", "item", "kit");
     }
     private final Collection<String> PRESETS = GiveUtils.PRESETS.keySet();
 

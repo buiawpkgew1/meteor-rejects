@@ -46,7 +46,7 @@ public class LocateCommand extends Command {
     private Vec3d secondEnd;
 
     public LocateCommand() {
-        super("locate", "Locates structures", "loc");
+        super("locate", "找到结构", "loc");
     }
 
     @Override
@@ -54,22 +54,22 @@ public class LocateCommand extends Command {
         builder.then(literal("lodestone").executes(ctx -> {
             ItemStack stack = mc.player.getInventory().getMainHandStack();
             if (stack.getItem() != Items.COMPASS) {
-                error("You need to hold a lodestone compass");
+                error("你需要持有一个罗盘");
                 return SINGLE_SUCCESS;
             }
             NbtCompound tag = stack.getNbt();
             if (tag == null) {
-                error("Couldn't get the NBT data. Are you holding a (highlight)lodestone(default) compass?");
+                error("无法得到NBT的数据。你是否持有(高亮)Lodestone(默认)指南针？?");
                 return SINGLE_SUCCESS;
             }
             NbtCompound nbt1 = tag.getCompound("LodestonePos");
             if (nbt1 == null) {
-                error("Couldn't get the NBT data. Are you holding a (highlight)lodestone(default) compass?");
+                error("无法得到NBT的数据。你是否持有(高亮)Lodestone(默认)指南针？?");
                 return SINGLE_SUCCESS;
             }
 
             Vec3d coords = new Vec3d(nbt1.getDouble("X"),nbt1.getDouble("Y"),nbt1.getDouble("Z"));
-            MutableText text = Text.literal("Lodestone located at ");
+            MutableText text = Text.literal("位于的Lodestone ");
             text.append(ChatUtils.formatCoords(coords));
             text.append(".");
             info(text);
@@ -99,7 +99,7 @@ public class LocateCommand extends Command {
                     secondStart = null;
                     secondEnd = null;
                     MeteorClient.EVENT_BUS.subscribe(this);
-                    info("Please throw the first Eye of Ender");
+                    info("请抛出埃德尔的第一只眼睛");
                 }
             }
             throw NOT_FOUND.create(feature);
@@ -147,7 +147,7 @@ public class LocateCommand extends Command {
         Vec3d pos = new Vec3d(x, y, z);
         if (this.firstEnd == null) {
             this.firstEnd = pos;
-            info("Please throw the second Eye Of Ender from a different location.");
+            info("请从不同的地方扔出第二只 '末影之眼'.");
         }
         else {
             this.secondEnd = pos;
@@ -157,7 +157,7 @@ public class LocateCommand extends Command {
 
     private void findStronghold() {
         if (this.firstStart == null || this.firstEnd == null || this.secondStart == null || this.secondEnd == null) {
-            error("Missing position data");
+            error("缺少的位置数据");
             cancel();
             return;
         }
@@ -165,14 +165,14 @@ public class LocateCommand extends Command {
         final double[] end = new double[]{this.firstStart.x, this.firstStart.z, this.firstEnd.x, this.firstEnd.z};
         final double[] intersection = calcIntersection(start, end);
         if (Double.isNaN(intersection[0]) || Double.isNaN(intersection[1]) || Double.isInfinite(intersection[0]) || Double.isInfinite(intersection[1])) {
-            error("Lines are parallel");
+            error("线条是平行的");
             cancel();
             return;
         }
         BaritoneAPI.getProvider().getPrimaryBaritone().getCommandManager().execute("stop");
         MeteorClient.EVENT_BUS.unsubscribe(this);
         Vec3d coords = new Vec3d(intersection[0],0,intersection[1]);
-        MutableText text = Text.literal("Stronghold roughly located at ");
+        MutableText text = Text.literal("Stronghold大致位于 ");
         text.append(ChatUtils.formatCoords(coords));
         text.append(".");
         info(text);

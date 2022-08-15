@@ -8,7 +8,7 @@ import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 
 public class ClearChatCommand extends Command {
     public ClearChatCommand() {
-        super("clear-chat", "Clears your chat.", "clear", "cls");
+        super("clear-chat", "清除您的聊天记录.", "clear", "cls");
     }
 
     @Override

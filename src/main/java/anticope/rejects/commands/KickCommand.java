@@ -18,7 +18,7 @@ import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 public class KickCommand extends Command {
 
     public KickCommand() {
-        super("kick", "Kick or disconnect yourself from the server", "disconnect", "quit");
+        super("kick", "踢掉或断开自己与服务器的连接", "disconnect", "quit");
     }
 
     @Override

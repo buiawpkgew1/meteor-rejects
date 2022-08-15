@@ -21,7 +21,7 @@ public class SeedCommand extends Command {
     private final static SimpleCommandExceptionType NO_SEED = new SimpleCommandExceptionType(Text.literal("No seed for current world saved."));
 
     public SeedCommand() {
-        super("seed", "Get or set seed for the current world.");
+        super("seed", "获取或设置当前世界的种子.");
     }
 
     @Override
@@ -45,7 +45,7 @@ public class SeedCommand extends Command {
         builder.then(literal("delete").executes(ctx -> {
             Seed seed = Seeds.get().getSeed();
             if (seed != null) {
-                MutableText text = Text.literal("Deleted ");
+                MutableText text = Text.literal("已删除 ");
                 text.append(seed.toText());
                 info(text);
             }

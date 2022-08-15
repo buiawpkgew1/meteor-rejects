@@ -27,7 +27,7 @@ public class TerrainExport extends Command {
     private final static SimpleCommandExceptionType IO_EXCEPTION = new SimpleCommandExceptionType(Text.literal("An IOException occurred"));
 
     public TerrainExport() {
-        super("terrain-export", "Export an area to the c++ terrain finder format (very popbob command).");
+        super("terrain-export", "将一个区域导出为c++地形搜索器的格式（非常popbob命令）。.");
 
         filters = BufferUtils.createPointerBuffer(1);
 
@@ -40,7 +40,7 @@ public class TerrainExport extends Command {
     @Override
     public void build(LiteralArgumentBuilder<CommandSource> builder) {
         builder.then(argument("distance", IntegerArgumentType.integer(1)).executes(context -> {
-            int distance = IntegerArgumentType.getInteger(context, "distance");
+            int distance = IntegerArgumentType.getInteger(context, "距离");
 
             StringBuilder stringBuilder = new StringBuilder();
             for (int x = -distance; x <= distance; x++) {
@@ -54,7 +54,7 @@ public class TerrainExport extends Command {
                 }
             }
 
-            String path = TinyFileDialogs.tinyfd_saveFileDialog("Save data", null, filters, null);
+            String path = TinyFileDialogs.tinyfd_saveFileDialog("保存数据", null, filters, null);
             if (path == null) throw IO_EXCEPTION.create();
             if (!path.endsWith(".txt"))
                 path += ".txt";

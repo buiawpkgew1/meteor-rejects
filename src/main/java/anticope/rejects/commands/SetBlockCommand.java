@@ -15,7 +15,7 @@ import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 
 public class SetBlockCommand extends Command {
     public SetBlockCommand() {
-        super("setblock", "Sets client side blocks", "sblk");
+        super("setblock", "设置客户端块", "sblk");
     }
 
     @Override

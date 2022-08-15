@@ -10,7 +10,7 @@ import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 
 public class CenterCommand extends Command {
     public CenterCommand() {
-        super("center", "Centers the player on a block.");
+        super("center", "以玩家为中心进行阻挡.");
     }
 
     @Override

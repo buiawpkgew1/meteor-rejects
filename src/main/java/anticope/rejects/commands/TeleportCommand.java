@@ -13,7 +13,7 @@ public class TeleportCommand extends Command {
 
 
     public TeleportCommand() {
-        super("teleport","Sends a packet to the server with new position. Allows to teleport small distances.", "tp");
+        super("teleport","向服务器发送一个带有新位置的数据包。允许小距离传送.", "tp");
     }
 
     @Override

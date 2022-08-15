@@ -31,7 +31,7 @@ public class SaveSkinCommand extends Command {
     private final Gson GSON = new Gson();
 
     public SaveSkinCommand() {
-        super("save-skin","Download a player's skin by name.", "skin","skinsteal");
+        super("save-skin","按名称下载玩家的皮肤.", "skin","skinsteal");
 
         filters = BufferUtils.createPointerBuffer(1);
 

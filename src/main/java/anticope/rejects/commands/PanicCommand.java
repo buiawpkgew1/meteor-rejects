@@ -12,7 +12,7 @@ import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 
 public class PanicCommand extends Command {
     public PanicCommand() {
-        super("panic", "Disables all modules.", "disable-all");
+        super("panic", "禁用所有模块.", "disable-all");
     }
 
     @Override

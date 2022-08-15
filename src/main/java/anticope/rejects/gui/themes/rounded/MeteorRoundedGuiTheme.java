@@ -43,7 +43,7 @@ public class MeteorRoundedGuiTheme extends GuiTheme {
 
     public final Setting<Double> scale = sgGeneral.add(new DoubleSetting.Builder()
             .name("scale")
-            .description("Scale of the GUI.")
+            .description("GUI的规模.")
             .defaultValue(1)
             .min(0.75)
             .sliderMin(0.75)
@@ -57,21 +57,21 @@ public class MeteorRoundedGuiTheme extends GuiTheme {
 
     public final Setting<AlignmentX> moduleAlignment = sgGeneral.add(new EnumSetting.Builder<AlignmentX>()
             .name("module-alignment")
-            .description("How module titles are aligned.")
+            .description("模块标题是如何排列的.")
             .defaultValue(AlignmentX.Center)
             .build()
     );
 
     public final Setting<Boolean> categoryIcons = sgGeneral.add(new BoolSetting.Builder()
             .name("category-icons")
-            .description("Adds item icons to module categories.")
+            .description("为模块类别添加项目图标.")
             .defaultValue(false)
             .build()
     );
 
     public final Setting<Boolean> hideHUD = sgGeneral.add(new BoolSetting.Builder()
             .name("hide-HUD")
-            .description("Hide HUD when in GUI.")
+            .description("在GUI中隐藏HUD.")
             .defaultValue(false)
             .onChanged(v -> {
                 if (mc.currentScreen instanceof WidgetScreen) mc.options.hudHidden = v;
@@ -81,7 +81,7 @@ public class MeteorRoundedGuiTheme extends GuiTheme {
 
     public final Setting<Integer> round = sgGeneral.add(new IntSetting.Builder()
             .name("round")
-            .description("How much windows should be rounded")
+            .description("窗户应该有多大的圆角")
             .defaultValue(0)
             .min(0)
             .max(20)

@@ -40,7 +40,7 @@ public class ServerCommand extends Command {
     private final static HashMap<Integer, String> ports = new HashMap<Integer, String>();
 
     public ServerCommand() {
-        super("server", "Prints server information");
+        super("server", "印出服务器信息");
 
         ports.put(20, "FTP");
         ports.put(22, "SSH");

@@ -12,7 +12,7 @@ import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 public class HeadsCommand extends Command {
 
     public HeadsCommand() {
-        super("heads", "Display heads gui");
+        super("heads", "显示头像 GUI");
     }
 
     @Override

@@ -9,7 +9,7 @@ import static com.mojang.brigadier.Command.SINGLE_SUCCESS;
 
 public class SetVelocityCommand extends Command {
     public SetVelocityCommand() {
-        super("set-velocity", "Sets player velocity", "velocity", "vel");
+        super("set-velocity", "设置玩家的速度", "velocity", "vel");
     }
 
     @Override
