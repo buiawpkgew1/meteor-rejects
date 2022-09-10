@@ -35,7 +35,7 @@ public class RadarHud extends HudElement {
 
     private final Setting<SettingColor> backgroundColor = sgGeneral.add(new ColorSetting.Builder()
             .name("background-color")
-            .description("背景的颜色.")
+            .description("背景的颜色")
             .defaultValue(new SettingColor(0, 0, 0, 64))
             .build()
     );
@@ -43,28 +43,28 @@ public class RadarHud extends HudElement {
 
     private final Setting<Object2BooleanMap<EntityType<?>>> entities = sgGeneral.add(new EntityTypeListSetting.Builder()
             .name("entities")
-            .description("选择特定的实体.")
+            .description("选择特定的实体")
             .defaultValue(EntityType.PLAYER)
             .build()
     );
 
     private final Setting<Boolean> letters = sgGeneral.add(new BoolSetting.Builder()
             .name("letters")
-            .description("使用实体的类型的第一个字母.")
+            .description("使用实体的类型的第一个字母")
             .defaultValue(true)
             .build()
     );
 
     private final Setting<Boolean> showWaypoints = sgGeneral.add(new BoolSetting.Builder()
             .name("waypoints")
-            .description("显示航点.")
+            .description("显示航点")
             .defaultValue(false)
             .build()
     );
 
     private final Setting<Double> scale = sgGeneral.add(new DoubleSetting.Builder()
             .name("scale")
-            .description("规模.")
+            .description("规模")
             .defaultValue(1)
             .min(1)
             .sliderRange(0.01, 5)
@@ -74,7 +74,7 @@ public class RadarHud extends HudElement {
 
     private final Setting<Double> zoom = sgGeneral.add(new DoubleSetting.Builder()
         .name("zoom")
-        .description("雷达放大.")
+        .description("雷达放大")
         .defaultValue(1)
         .min(0.01)
         .sliderRange(0.01, 3)
