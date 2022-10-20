@@ -33,14 +33,14 @@
 
 # Features
 ## Modules
-- AntiBot (Removed from Meteor in [166fc](https://github.com/MeteorDevelopment/meteor-client/commit/166fccc73e53de6cfdbe41ea58dc593a2f5011f6#diff-05896d5a7f735a14ee8da5d12fbd24585862ca68efdf32b9401b3f4329d17c73))
-- Insta Mine (Removed from Meteor in [62cd0](https://github.com/MeteorDevelopment/meteor-client/commit/62cd0461e48a6c50f040bf48de25be1fa4eba77e))
+- AntiBot (Removed from Meteor in [166fc](https://github.com/MeteorDevelopment/meteor-client/commit/166fccc73e53de6cfdbe41ea58dc593a2f5011f6))
 - AntiSpawnpoint
 - AntiVanish
 - AutoBedTrap (Ported from [BleachHack-CupEdition](https://github.com/CUPZYY/BleachHack-CupEdition/blob/master/CupEdition-1.17/src/main/java/bleach/hack/module/mods/AutoBedtrap.java))
 - AutoCraft (More generalized version of [AutoBedCraft](https://github.com/Anticope/orion/blob/main/src/main/java/me/ghosttypes/orion/modules/main/AutoBedCraft.java) from orion)
 - AutoExtinguish
 - AutoPot (Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/274))
+- AutoSoup (Ported from [Wurst](https://github.com/Wurst-Imperium/Wurst7/tree))
 - AutoTNT
 - AutoWither (Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/1070))
 - BlockIn
@@ -54,8 +54,11 @@
 - Confuse
 - Coord Logger (World events from [JexClient](https://github.com/DustinRepo/JexClient-main/blob/main/src/main/java/me/dustin/jex/feature/mod/impl/misc/CoordFinder.java))
 - Custom Packets
+- Extra Elytra (Ported from [Wurst](https://github.com/Wurst-Imperium/Wurst7/tree))
 - Ghost Mode (Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/1932))
 - Glide (Ported from [Wurst](https://github.com/Wurst-Imperium/Wurst7/tree))
+- Insta Mine (Removed from Meteor in [62cd0](https://github.com/MeteorDevelopment/meteor-client/commit/62cd0461e48a6c50f040bf48de25be1fa4eba77e))
+- Item generator (Ported from [Wurst](https://github.com/Wurst-Imperium/Wurst7/tree))
 - InteractionMenu (Ported from [BleachHack](https://github.com/BleachDrinker420/BleachHack/pull/211))
 - Lavacast
 - NewChunks (Ported from [BleackHack](https://github.com/BleachDrinker420/BleachHack/blob/master/BleachHack-Fabric-1.17/src/main/java/bleach/hack/module/mods/NewChunks.java))
@@ -66,6 +69,8 @@
 - Rendering
 - SkeletonESP (Ported from [JexClient](https://github.com/DustinRepo/JexClient-main/blob/main/src/main/java/me/dustin/jex/feature/mod/impl/render/Skeletons.java))
 - SoundLocator
+- Server Finder (Ported from [MeteorAdditions](https://github.com/JFronny/MeteorAdditions))
+- TillAura (Ported from [Wurst](https://github.com/Wurst-Imperium/Wurst7/tree))
 - TreeAura (Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/2138))
 
 ### Modifications

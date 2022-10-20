@@ -39,6 +39,7 @@ public class MeteorRejectsAddon extends MeteorAddon {
         modules.add(new AutoCraft());
         modules.add(new AutoExtinguish());
         modules.add(new AutoPot());
+        modules.add(new AutoSoup());
         modules.add(new AutoTNT());
         modules.add(new AutoWither());
         modules.add(new BoatGlitch());
@@ -53,9 +54,11 @@ public class MeteorRejectsAddon extends MeteorAddon {
         modules.add(new Confuse());
         modules.add(new CoordLogger());
         modules.add(new CustomPackets());
+        modules.add(new ExtraElytra());
         modules.add(new GhostMode());
         modules.add(new Glide());
         modules.add(new InstaMine());
+        modules.add(new ItemGenerator());
         modules.add(new InteractionMenu());
         modules.add(new Lavacast());
         modules.add(new NewChunks());
@@ -66,6 +69,7 @@ public class MeteorRejectsAddon extends MeteorAddon {
         modules.add(new Rendering());
         modules.add(new SkeletonESP());
         modules.add(new SoundLocator());
+        modules.add(new TillAura());
         modules.add(new TreeAura());
         
         // Module modifications
@@ -120,7 +124,7 @@ public class MeteorRejectsAddon extends MeteorAddon {
             .get().getMetadata()
             .getCustomValue("github:sha")
             .getAsString();
-        LOG.info(String.format("Rejects version: %s", commit.toString()));
+        LOG.info(String.format("Rejects version: %s", commit));
         return commit.isEmpty() ? null : commit.trim();
     }
 
