@@ -4,10 +4,7 @@
 name: Gradle wrapper upgrade
 
 on:
-  push:
-    branches: [ master ]
-    paths-ignore:
-      - '*.md'
+  workflow_dispatch:
       
 
 jobs:
@@ -23,7 +20,7 @@ jobs:
         distribution: 'zulu'
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
-    - name: Build with Gradle
+    - name: Gradle wrapper upgrade
       run: ./gradlew wrapper --gradle-version=7.6 --distribution-type=bin
     - name: Commit change
       run: |
