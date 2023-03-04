@@ -73,6 +73,7 @@
 - PacketFly (Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/813))
 - Painter
 - Rendering
+- RoboWalk ((Taken from an [unmerged PR](https://github.com/MeteorDevelopment/meteor-client/pull/3015)))
 - Shield Bypass
 - Silent Disconnect
 - SkeletonESP (Ported from [JexClient](https://github.com/DustinRepo/JexClient-main/blob/main/src/main/java/me/dustin/jex/feature/mod/impl/render/Skeletons.java))
@@ -95,6 +96,8 @@
   - `Random Teleport, Hit Chance, Random Delay` (Removed from Meteor in [8722e](https://github.com/MeteorDevelopment/meteor-client/commit/8722ef565afa02ca4b6d9710a20fc9fcfd97bf05))
 - AimAssist
   - `Fov filter`
+- Alts
+  -  `Yggdrasil Login`
 
 ## Commands
 - `.center`
